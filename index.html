@@ -1,0 +1,116 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shifa - Developer Portfolio </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+body{
+    background-color:hwb(271 1% 89%);
+    color:white;
+    font-family:'poppins',sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:80px;
+    background-color:hwb(271 4% 77%) ;
+}
+nav ul{
+    display:flex;
+    justify-self: center;
+}
+nav ul li{
+    list-style-type: none;
+    margin:0 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+nav ul li a:hover{
+    color:rgb(161, 121, 236);
+    font-size: 1.03rem;
+}
+
+.left{
+    font-size: 1.5rem;
+}
+.firstsection{
+    display: flex;
+    justify-content: space-around;
+    margin: 80px;
+  
+}
+.firstsection> div{
+    width: 40%;
+    align-items: center;
+}
+.leftsection{
+    
+    font-size: 3rem;
+}
+
+.rightsection img{
+    width: 99%;
+    margin: 10px 0;
+}
+.purple{
+    color:rgb(192, 76, 192);
+}
+#element{
+    color:  rgb(192, 76, 192);
+}
+    </style>
+ </head>
+
+ <body>
+    <header>
+        <nav>
+            <div class="left">Shifa's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Service</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, I'm <span class="purple">Shifa Khan</span>
+                <div>and I am Passionate towards </div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="C:\Users\INDIAN\Downloads\—Pngtree—data scientist isometric illustration concept_4959895.png" alt="">
+            </div>
+
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Machine learning','Visualization','Data analysis'],
+          typeSpeed: 50,
+        });
+      </script>
+ </body>
+ </html>
